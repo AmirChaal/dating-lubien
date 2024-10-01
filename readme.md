@@ -1,6 +1,6 @@
 # INSTALLATION
 ## Option 1
-- (Installez Node.JS)[https://nodejs.org/en/download/package-manager]
+- [Installez Node.JS](https://nodejs.org/en/download/package-manager)
 - Créez un dossier, et lancer un terminal à l'intérieur (Clique Droit > Ouvrir dans le Terminal)
 - Entrez `git clone git@github.com:AmirChaal/dating-lubien.git`
 - Entrez `npm i`
