@@ -1,0 +1,2017 @@
+{
+   "chapitres": [
+      {
+         "identifiant": "XXXX_HUB_DORTOIR",
+         "image": "",
+         "texte": "<p>XXXX_TEXTE_HUB_DORTOIR</p>",
+         "options": [
+            {
+               "question": "XXXX_ALLER_VERS_MIROY",
+               "vers": "XXXX_DEBUT_MIROY_DORTOIR",
+               "condition": [
+                  [
+                     "a_vu_miroy_dortoir",
+                     false
+                  ]
+               ],
+               "consequence": [[]]
+            },
+            {
+               "question": "XXXX_ALLER_HUB_OBSERVATOIRE",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_DEBUT_MIROY_DORTOIR",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous quittez la pièce, vous pouvez y retourner à tout moment. En même temps, c'est mieux pour dormir.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.1-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.1-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous vous retrouvez face à un jeune homme avec une ampoule grésillante sur la tête, regardant par la fenêtre, perdu dans ses pensées.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.1-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.1-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>On dirait qu'il ne vous a pas remarqué.</p>",
+         "options": [
+            {
+               "question": "Peut-être qu'il vaut mieux ne pas le déranger.",
+               "vers": "1-20.3-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "Vous vous approchez de lui pour le saluer.",
+               "vers": "1-20.4-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_vu_miroy_dortoir",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"WOW !! COMMENT TU FAIS POUR BRILLER COMME CA ?!\".",
+               "vers": "1-20.5-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins1",
+                     true
+                  ],
+                  [
+                     "a_vu_miroy_dortoir",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.3-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous pensez que c'est mieux de le laisser tranquille. Vous vous éloignez de lui, et de la lumière rassurante.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous saluez le jeune homme d'un simple \"Salut...?\" un peu hésitant, vous avez peur de le déranger.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.4-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"...Oh ! Salutation. Je m'appelle Miroy, vous devez être la personne dont tout le monde parle ici. C'est un honneur.\"</p>",
+         "options": [
+            {
+               "question": "\"Enchanté.e également ! J'ai lu quelques archives, donc je vous connais déjà !\"",
+               "vers": "1-20.4-2",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus1",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Qu'est ce que tu fais ? Et pourquoi tu es dans le noir ?",
+               "vers": "1-20.6-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-2",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"A-Ah ?! Vraiment ?! Je suis super flatté huh je euh...\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.4-4",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-4",
+         "image": "",
+         "perso": "",
+         "texte": "<p>On dirait que vos efforts de recherche le touchent beaucoup.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.4-5",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-5",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"J'aime beaucoup regarder les étoiles, elles brillent au loin, solitaire et apaisantes, perdues dans la nuit.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.4-6",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.4-6",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Je pense aller à l'observatoire demain matin, vous... enfin tu es libre de me rejoindre si tu veux !\"</p>",
+         "options": [
+            {
+               "question": "\"Pourquoi pas ?\" L'idée vous plait.",
+               "vers": "1-20.8-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je vais y réfléchir...\" L'idée ne vous parle pas plus que ça.",
+               "vers": "1-20.9-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.8-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Trop cool ! On se voit demain alors, ça sera l'occasion de faire connaissance. A plus tard !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.8-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.8-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Le jeune homme s'en va, emportant avec lui la seule source de lumière de la pièce.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.9-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"C-ce n'est pas grave ! Si tu changes d'avis, tu sais où me trouver. Bonne nuit.\" Le jeune homme s'en va, emportant avec lui la seule source de lumière de la pièce.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.6-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oh euh et bien... Je ne veux pas vous faire peur mais j'ai l'impression qu'il y a quelqu'un d'autre dans la pièce. Et pour tout vous dire, cette présence m'angoisse. Je me suis dit qu'en restant dans le noir avec pour seule source de lumière mon ampoule, la personne se manifesterait.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.6-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.6-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Je me fais peut-être des idées ?\"</p>",
+         "options": [
+            {
+               "question": "\"Non je ne pense pas, j'ai cru voir une ombre en entrant dans la pièce... Tu crois que c'est un fantôme ?!\"",
+               "vers": "1-20.6-2",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je pense que tu te fais des films haha.\"",
+               "vers": "1-20.7-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.6-2",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"... Hein ?! T-Tu crois que c'est un f-fantôme ?! Ah...\" La lumière de son ampoule s'illumine brutalement et manque de vous aveugler. Vous voyez le jeune homme sortir brusquement de la pièce, emportant avec lui la seule source de lumière.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Dans le feu de l'action, vous agrippez son ampoule.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.5-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Qu-?!\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.5-2",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-2",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Le jeune homme sursauta violemment et tomba à la renverse en voulant s'éloigner de vous.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.5-3",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-3",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Non mais ça va pas ?! Vous m'avez fait peur !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.5-4",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-4",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Il est visiblement très contrarié du manque total de tact dont vous avez fait preuve. Aïe.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.5-5",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.5-5",
+         "image": "",
+         "perso": "",
+         "texte": "<p>On dirait qu'il attend quelque chose. Des excuses peut-être ?</p>",
+         "options": [
+            {
+               "question": "\"Oh euh désolé.e... Je ne voulais pas te faire peur, est-ce que ça va ?\"",
+               "vers": "1-20.10-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Eh bah, tu flippes pour rien, c'est fou !\" Vous vous moquez de lui.",
+               "vers": "1-20.16-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.16-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p> Il se relève sans vous regardez et s'en va sans même vous adressez la parole. On dirait que vous avez loupé une occasion de vous taire. Vous n'avez plus rien à faire près de la fenêtre.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.7-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Huh je pense aussi haha. J'ai trop l'habitude de veiller tard la nuit, ça ne me réussit pas on dirait. Je vais faire un petit tour dehors pour me rafraîchir les idées. Repose toi bien !\" Le jeune homme s'en va en regardant autour de lui, emportant avec lui la seule source de lumière de la pièce.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_DORTOIR",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.10-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Hm.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.10-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.10-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Il se relève en vous regardant dans les yeux.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.10-2",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.10-2",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Miroy. Je présume que tu es la nouvelle personne qui nous rejoint ? Tu as un tempérament très... Enflammé. Tiens, ça me rappelle quelqu'un.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.10-3",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.10-3",
+         "image": "",
+         "perso": "",
+         "texte": "<p>On dirait que vous lui faites penser à quelqu'un.</p>",
+         "options": [
+            {
+               "question": "\"Tu parles de Shino ?\"",
+               "vers": "1-20.12-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins1",
+                     false
+                  ]
+               ]
+            },
+            {
+               "question": "\"Tu parles de Ccrazyie ?\"",
+               "vers": "1-20.13-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Comment ça ?\"",
+               "vers": "1-20.14-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.12-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Vous connaissez Shino... ?\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.12-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.12-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oh ! J'imagine que vous vous entendriez bien. C'est une personne qui ne manque pas de culot. Un peu comme vous à l'instant.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.12-2",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.12-2",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Vous m'excuserez, je vais prendre un peu l'air. Bonne nuit.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.8-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.13-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Hein ? Euh non non, je ne pensais pas vraiment à elle... Hum, je dois y aller.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.8-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "1-20.14-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"...Laissez tomber. Je pense que je vais y aller.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "1-20.8-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_HUB_OBSERVATOIRE",
+         "image": "",
+         "perso": "",
+         "texte": "<p>XXXX_TEXTE_HUB_OBSERVATOIRE</p>",
+         "options": [
+            {
+               "question": "XXXX_ALLER_VERS_MIROY",
+               "vers": "XXXX_DEBUT_MIROY_OBSERVATOIRE",
+               "condition": [
+                  [
+                     "a_vu_miroy_observatoire",
+                     false
+                  ]
+               ],
+               "consequence": []
+            },
+            {
+               "question": "XXXX_ALLER_HUB_JARDIN",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_DEBUT_MIROY_OBSERVATOIRE",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous apercevez une figure familière.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.1-0",
+               "condition": [
+                  [
+                     "miroy_aff_moins1",
+                     true
+                  ]
+               ],
+               "consequence": []
+            },
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.2-0",
+               "condition": [
+                  [
+                     "miroy_aff_plus1",
+                     false
+                  ],
+                  [
+                     "miroy_aff_moins1",
+                     false
+                  ]
+               ],
+               "consequence": []
+            },
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.3-0",
+               "condition": [
+                  [
+                     "miroy_aff_plus1",
+                     true
+                  ]
+               ],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.1-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>C'est Miroy, le jeune homme que vous avez brusqué la nuit dernière. Peut-être que c'est le bon moment pour s'excuser... ? Ou alors d'envenimer les choses...</p>",
+         "options": [
+            {
+               "question": "\"Hey... Salut ! Désolé.e pour hier... J'ai pas été très cool.\"",
+               "vers": "2-20.4-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Vous profitez du fait qu'il ne vous ait pas remarqué pour lui donner une pichenette à l'arrière de la tête",
+               "vers": "2-20.5-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins2",
+                     true
+                  ],
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Vous vous en allez explorer ailleurs",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.4-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Uhm... Salut. C'est pas grave, ça m'est déjà arrivé de faire des trucs stupides quand je panique.Pourquoi êtes-vous ici ?\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.4-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.4-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Miroy n'a pas l'air plus enchanté que ça de vous voir ici, mais veut bien faire l'effort de converser un peu.</p>",
+         "options": [
+            {
+               "question": "\"...\"",
+               "vers": "2-20.6-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "Bah quoi, j'ai pas le droit d'explorer un peu ?",
+               "vers": "2-20.7-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je suis là pour voir les étoiles, c'est un observatoire après tout !\"",
+               "vers": "2-20.8-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.6-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"...\" Vous vous regardez dans le blanc des yeux, c'est très génant. Miroy regarde autour de lui frénétiquement puis dit \"Hum... On m'appelle je crois. Au revoir.\" Il s'éloigne en courant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.7-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Euh ouais c'est vrai... C'était stupide comme question. Bon euh, je vais te laisser explorer tranquillement. Au revoir.\"Il s'éloigne en courant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.8-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Ah ? Toi aussi tu aimes les étoiles ? Le matin, il vaut mieux se lever de bonne heure pour voir quelque chose !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.8-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.8-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Mais du coup, tu t'y connais en astronomie ?\"</p>",
+         "options": [
+            {
+               "question": "Oui ! J'adore l'astronomie, mon étoile préférée c'est Anémonie !",
+               "vers": "2-20.9-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins2",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Oui ! J'adore l'astronomie, mon étoile préférée c'est Arcturus !",
+               "vers": "2-20.10-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins1",
+                     false
+                  ]
+               ]
+            },
+            {
+               "question": "Non, pas du tout !",
+               "vers": "2-20.11-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.9-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Ah... Oui bien sûr, Anémonie. On voit super bien les étoiles d'ici, surtout celles qui n'existent pas.\" Oups, on dirait que votre bluff n'a pas marché, mieux vaut s'en aller avant que ça devienne encore plus gênant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.10-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Arcturus ! C'est l'une des étoiles les plus brillantes visibles dans l'hémisphère nord ! On peut l'apercevoir dans la constellation du Bouvier et-\" Il continue à donner des anecdotes sur l'étoile que vous avez mentionnée, on dirait qu'il est passionné.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.10-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.10-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Désolé ! Je me suis emporté ! J'aime beaucoup en parler haha ! Ca, les fleurs, les jeux vidéos et le cinéma.\"</p>",
+         "options": [
+            {
+               "question": "\"J'aime bien les jeux vidéos aussi mais je ne joue pas autant que toi je pense.\"",
+               "vers": "2-20.12-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Mince alors, tu as beaucoup de passions on dirait ! Tu ne t'ennuies pas !\"",
+               "vers": "2-20.13-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Un jeu incroyable sur l'astronomie... Genre Outer Wilds ? C'est pas mal !\"",
+               "vers": "2-20.14-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus1",
+                     true
+                  ],
+                  [
+                     "miroy_aff_plus2",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.12-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Ahaha oui c'est possible, il m'arrive de parler pendant des heures de l'un de ces sujets. Si jamais tu veux discuter encore avec moi, je compte passer dans le jardin tout à l'heure. Tu peux m'y rejoindre si tu veux. A plus tard !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.13-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu m'étonnes ! Il m'arrive de parler pendant des heures de l'un de ces sujets. Si jamais tu veux discuter encore avec moi, je compte passer dans le jardin tout à l'heure. Tu peux m'y rejoindre si tu veux. A plus tard !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.14-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu connais Outer Wilds ?! Oh... Tu es bien plus intéressant.e que je ne le pensais. C'est un de mes jeux préférés ! ... Argh, je dois y aller mais écoute, je vais dans le jardin un peu plus tard, tu peux me rejoindre si tu veux ! Bye bye !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.11-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Eh bien, si ça vous intéresse, vous pouvez toujours consulter la carte du ciel et vous amuser à reconnaître les constellations ! Vous pouvez prendre le télescope dans le coin là bas, j'ai terminé ce que je faisais. A plus tard.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.5-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"AH-... !\" Vous donnez une pichenette à Miroy, on dirait que vous y êtes allé un peu fort, tellement qu'il est tombé au sol...</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.5-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.5-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Miroy est au sol, son ampoule vient de changer de couleur pour un rouge écarlate très vif. Uh-ho...</p>",
+         "options": [
+            {
+               "question": "Vous décidez d'affronter ce qui va arriver, tant pis pour les conséquences, vous saviez que ce que vous faisiez était une série de mauvais choix.",
+               "vers": "2-20.15-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "Vous prenez la poudre d'escampette, il vaut mieux ne pas rester dans le coin.",
+               "vers": "2-20.16-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.15-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Hmm, il semblerait que vous ayez un instinct de survie très discutable car à peine relevé, Miroy vous donne un coup de poing tellement puissant qu'il vous fait voltiger dans les airs... Ah ! On dirait que vous n'arrivez plus à vous réveiller. Mince alors !</p>",
+         "options": []
+      },
+      {
+         "identifiant": "2-20.16-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous déguerpissez avant de regretter ce que vous venez de faire.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.2-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous apercevez une figure familière. C'est Miroy ! Il ne vous remarque pas on dirait...</p>",
+         "options": [
+            {
+               "question": "\"Hey salut ! Qu'est ce que tu fais ?\"",
+               "vers": "2-20.17-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Vous profitez du fait qu'il ne vous ait pas remarqué pour lui donner une pichenette à l'arrière de la tête",
+               "vers": "2-20.23-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins1",
+                     true
+                  ],
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Vous vous en allez explorer ailleurs",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.17-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Ah, salut ! Je suis en train de ranger mon télescope, j'ai terminé ce que je faisais.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.17-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.17-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Et vous, pourquoi vous êtes là ?\"</p>",
+         "options": [
+            {
+               "question": "\"J'explore juste !\"",
+               "vers": "2-20.18-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je voulais discuter avec toi !\"",
+               "vers": "2-20.19-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus1",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.18-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Je vois. Amusez vous bien à explorer alors, mais faites attention à ne pas vous perdre !\" Le jeune homme vous salue en s'en allant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.19-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Discuter avec moi ? Oh je... Avec plaisir !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.19-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.19-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Qu'est ce que tu aimes faire pour passer le temps ?\"</p>",
+         "options": [
+            {
+               "question": "\"Je parle à pleins de gens, je me balade...\"",
+               "vers": "2-20.20-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je préfère passer du temps seul.e en général mais je me demandais si tu voulais passer du temps avec moi.\"",
+               "vers": "2-20.21-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus2",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Ça dépend de mon humeur, parfois je dessine, parfois je dors.\"",
+               "vers": "2-20.22-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.20-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Je vois. C'est toujours sympa de rencontrer de nouvelles personnes oui ! Je te laisse continuer ton aventure alors, amuses toi bien !\" Le jeune homme vous salue en s'en allant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.21-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"C'est... Inattendu. Mais j'apprécie ! Vous... Tu peux me rejoindre dans le jardin tout à l'heure si tu veux, on pourra passer du temps ensemble ! Je vais devoir te laisser, merci d'être passé me voir.\" Il vous sourit tendrement et s'en va.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.22-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Haha, oui je vois totalement le profil. Les passions ont tendance à prendre beaucoup de temps et d'énergie ! Mais prends le temps de bien te reposer et fais attention à ta santé... ! Bon, je dois filer. À plus tard !\"Le jeune homme vous salue en s'en allant. </p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.23-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"AH-... !\" Vous donnez une pichenette à Miroy, on dirait que vous y êtes allé un peu fort, tellement qu'il est tombé au sol...</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.23-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.23-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Eh mais ça va pas ?!\"</p>",
+         "options": [
+            {
+               "question": "\"Je voulais juste voir si ton crâne sonnait creux ou pas, vu que t'es un robot.\"",
+               "vers": "2-20.24-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_moins2",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Oh désolé.e, j'y suis allé.e un peu fort...\"",
+               "vers": "2-20.25-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "Vous prenez la poudre d'escampette, il vaut mieux ne pas rester dans le coin.",
+               "vers": "2-20.26-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.24-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Miroy se sent vraiment insulté. Il se frotte la tête en se relevant péniblement, et sans regarder, il quitte la salle.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.25-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Urgh...\" Il se frotte la tête en se relevant péniblement et s'en va en traînant des pieds.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.26-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous déguerpissez avant de regretter ce que vous venez de faire.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.3-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous apercevez une figure familière. C'est Miroy ! Il vous voit au loin et vous fait signe de le rejoindre.</p>",
+         "options": [
+            {
+               "question": "\"Coucou Miroy ! Qu'est ce que tu fais ?\"",
+               "vers": "2-20.27-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Oh désolé.e Miroy mais je dois aller ailleurs\"",
+               "vers": "2-20.28-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "Vous l'ignorez et décidez d'aller explorer ailleurs.",
+               "vers": "2-20.29-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus1",
+                     false
+                  ],
+                  [
+                     "a_vu_miroy_observatoire",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.27-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Salut, je suis content de te voir ! Je suis en train de ranger mon télescope, j'ai terminé ce que je faisais.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.27-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.27-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Et toi, pourquoi tu es là ?\"</p>",
+         "options": [
+            {
+               "question": "\"J'explore juste !\"",
+               "vers": "2-20.30-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je voulais discuter avec toi !\"",
+               "vers": "2-20.31-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus2",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.30-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Haha, ça me rappelle la première fois que je suis arrivé ici, je voulais être partout en même temps pour parler à tout le monde ! Je te laisse continuer à explorer, je vais dans le jardin. Bye bye !\" Le jeune homme vous salue en s'en allant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.31-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Discuter avec moi ? Oh je... Avec plaisir !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "2-20.31-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.31-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Qu'est ce que tu aimes faire pour passer le temps ?\"</p>",
+         "options": [
+            {
+               "question": "\"Je parle à pleins de gens, je me balade...\"",
+               "vers": "2-20.32-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je préfère passer du temps seul.e en général mais je me demandais si tu voulais passer du temps avec moi.\"",
+               "vers": "2-20.33-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus3",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Ça dépend de mon humeur, parfois je dessine, parfois je dors.\"",
+               "vers": "2-20.34-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.32-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Je vois. C'est toujours sympa de rencontrer de nouvelles personnes oui ! Je te laisse continuer ton aventure alors, amuses toi bien !\" Le jeune homme vous salue en s'en allant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.33-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oh... Ça serait avec grand plaisir. Je... Je vais dans le jardin tout à l'heure, tu peux m'y retrouver si tu veux... Merci d'être passé me voir\" Il vous sourit tendrement et s'en va.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.34-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Haha, oui je vois totalement le profil. Les passions ont tendance à prendre beaucoup de temps et d'énergie ! Mais prends le temps de bien te reposer et fais attention à ta santé... ! Bon, je dois filer. À plus tard !\" Le jeune homme vous salue en s'en allant.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.28-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Pas de soucis, on se voit plus tard alors\" Il sourit et s'en va.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "2-20.29-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous ignorez Miroy et vous éloignez de lui. Il a l'air un peu triste.</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_OBSERVATOIRE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_HUB_JARDIN",
+         "image": "",
+         "perso": "",
+         "texte": "<p>XXXX_TEXTE_HUB_JARDIN</p>",
+         "options": [
+            {
+               "question": "XXXX_ALLER_VERS_MIROY",
+               "vers": "XXXX_DEBUT_MIROY_JARDIN",
+               "condition": [
+                  [
+                     "a_vu_miroy_jardin",
+                     false
+                  ],
+                  [
+                     "miroy_aff_plus2",
+                     true
+                  ]
+               ],
+               "consequence": [
+                  [
+                     "a_vu_miroy_jardin",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "XXXX_ALLER_HUB_FETE",
+               "vers": "XXXX_HUB_FETE",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_DEBUT_MIROY_JARDIN",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous arrivez dans le Jardin, l'odeur de l'herbe fraîche envahit vos narines. Le soleil est haut dans le ciel, et vous réchauffe, vous rassure. Vous commencez à vous perdre dans vos pensées quand soudainement... Une main vous tapote l'épaule.</p>",
+         "options": [
+            {
+               "question": "\"Que- ?!\" Vous vous retournez subitement.",
+               "vers": "3-20.1-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "La peur vous fait prendre la poudre d'escampette par réflexe.",
+               "vers": "3-20.2-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus2",
+                     false
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.1-0",
+         "image": "Piscine_Baignade_2_Nuit.jpg",
+         "perso": "2_Dortoir1_1_Miroy_sourire2.png",
+         "texte": "<p>Une figure familière se dresse devant vous. C'est Miroy !</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.1-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.2-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous vous enfuyez en courant, sans même vous retourner. Vous êtes plutôt rapide !</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.1-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu es venu.e... ! Je suis tellement heureux de passer du temps avec toi !\"</p>",
+         "options": [
+            {
+               "question": "\"Moi aussi, j'aimerais beaucoup apprendre à te connaître un peu plus...\"",
+               "vers": "3-20.3-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Je me baladais juste.\"",
+               "vers": "3-20.11-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus2",
+                     false
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.11-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Ah... Oh dans ce cas je ne vais pas te retenir trop longtemps... Amuse toi bien.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.3-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"M-moi aussi... !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.3-1",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.3-1",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu aimes les fleurs ? J'aime beaucoup les Œillets.\"</p>",
+         "options": [
+            {
+               "question": "\"J'adore les fleurs ! Comme les tulipes ou encore les roses...\"",
+               "vers": "3-20.5-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Oui j'aime beaucoup mais je ne m'y connais pas vraiment.\"",
+               "vers": "3-20.6-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Pas plus que ça.\"",
+               "vers": "3-20.7-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Si je dis oui, tu voudras bien m'accorder un date ?\"",
+               "vers": "3-20.8-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.5-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oui ! Toutes les nuances de couleurs !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.9-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.6-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu n'as pas besoin de t'y connaître pour admirer la beauté des fleurs haha !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.9-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.7-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"C'est pas grave... ! Tu dois sûrement aimer d'autres domaines...\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.10-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.8-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Uhm... Si c'est ton objectif, c'est peut-être mieux d'être honnête plutôt que simplement dire ce que j'ai envie d'entendre, non ?\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.9-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"C'est quoi ta couleur préférée ?\"</p>",
+         "options": [
+            {
+               "question": "\"Le bleu !\"",
+               "vers": "3-20.12-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Le violet !\"",
+               "vers": "3-20.13-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "miroy_aff_plus3",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Le rouge !\"",
+               "vers": "3-20.14-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.12-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oui le bleu c'est plutôt joli ! ... Ce n'est pas ma couleur préférée même si mon apparence en donne l'impression.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.13-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Serieux ?! Moi aussi ! Je sais que c'est bizarre car avec mon apparence, on pourrait croire que c'est le bleu, mais je ne trouve pas de vêtements violets qui me mettent en valeur malheureusement...\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.10-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Genre la cuisine... ?\"</p>",
+         "options": [
+            {
+               "question": "\"Ah oui j'aime beaucoup cuisiner !\"",
+               "vers": "3-20.17-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"Pas vraiment non...\"",
+               "vers": "3-20.18-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.17-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Tu devrais bien t'entendre avec Shino alors haha\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.18-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oh... Euh, j'imagine que tu aimes d'autres choses alors... haha...\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.15-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Tout à coup, Miroy a l'air perdu dans ses pensées...</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.19-0",
+               "condition": [
+                  [
+                     "miroy_aff_plus3",
+                     false
+                  ]
+               ],
+               "consequence": []
+            },
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.20-0",
+               "condition": [
+                  [
+                     "miroy_aff_plus3",
+                     true
+                  ]
+               ],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.19-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Bon, je vais y aller, c'était sympa de faire ta connaissance. J'espère que tu trouveras un.e partenaire pour la soirée. Bye bye !\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.20-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Dis... Est-ce que tu as trouvé quelqu'un avec qui passer du temps ce soir... ? Je compte aller à l'observatoire, c'est un endroit calme et... Apaisant. Tu veux bien m'y rejoindre ?\"</p>",
+         "options": [
+            {
+               "question": "\"Oui !\"",
+               "vers": "3-20.21-0",
+               "condition": [],
+               "consequence": [
+                  [
+                     "a_accepte_miroy_date",
+                     true
+                  ]
+               ]
+            },
+            {
+               "question": "\"Non merci.\"",
+               "vers": "3-20.22-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.21-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"J'ai hâte d'y être alors ! A plus tard.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.22-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oh je vois, désolé. J'imagine que tu as déjà quelqu'un d'autre en tête... Uhm, salut...\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "XXXX_HUB_JARDIN",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "3-20.14-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Oui le rouge c'est plutôt joli, c'est la couleur préférée d'un proche à moi. Il ne porte quasiment que ça.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "3-20.15-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_HUB_FETE",
+         "image": "",
+         "perso": "",
+         "texte": "<p>XXXX_TEXTE_HUB_FETE</p>",
+         "options": [
+            {
+               "question": "XXXX_ALLER_VERS_MIROY",
+               "vers": "XXXX_DEBUT_MIROY_FETE",
+               "condition": [
+                  [
+                     "a_accepte_miroy_date",
+                     true
+                  ]
+               ],
+               "consequence": [
+                  [
+                     "a_vu_miroy_fete",
+                     true
+                  ]
+               ]
+            }
+         ]
+      },
+      {
+         "identifiant": "XXXX_DEBUT_MIROY_FETE",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous vous dirigiez vers l'observatoire pour rejoindre Miroy. La soirée a été tellement mouvementée que le calme de la salle vous percute aussi vite que la lumière éblouissante qu'émet l'ampoule du jeune homme.</p>",
+         "options": [
+            {
+               "question": "\"Salut Miroy, j'avais tellement hâte de te revoir !\"",
+               "vers": "4-20.1-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"C'est tellement calme ici...\"",
+               "vers": "4-20.2-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.1-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Moi aussi, j'apprécie vraiment ta compagnie.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "4-20.3-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.2-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"N'est-ce pas ? Je préfère rester ici pendant la soirée, j'ai un peu de mal avec la foule et les musiques trop fortes.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "4-20.3-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.3-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"La Lune est vraiment belle, n'est-ce pas... ?\"</p>",
+         "options": [
+            {
+               "question": "\"Oui, c'est merveilleux.\"",
+               "vers": "4-20.4-0",
+               "condition": [],
+               "consequence": []
+            },
+            {
+               "question": "\"C'est une référence à Sôseki Natsumé ?\"",
+               "vers": "4-20.5-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.4-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Elle est solitaire dans un ciel sombre, éloignée de tout.\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "4-20.6-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.5-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>\"Hmm qui sait ?\"</p>",
+         "options": [
+            {
+               "question": "(Suite...)",
+               "vers": "4-20.6-0",
+               "condition": [],
+               "consequence": []
+            }
+         ]
+      },
+      {
+         "identifiant": "4-20.6-0",
+         "image": "",
+         "perso": "",
+         "texte": "<p>Vous passez la nuit avec Miroy à regarder les étoiles, sans même remarquer que vous vous teniez la main depuis le début.</p>",
+         "options": []
+      }
+   ]
+}

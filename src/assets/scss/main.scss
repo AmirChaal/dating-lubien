@@ -1,0 +1,14 @@
+@import "primeicons/primeicons.css";
+
+html,
+body,
+#app {
+   height: 100%;
+   width: 100%;
+}
+
+#app {
+   display: flex;
+   padding: 1.5em;
+   gap: 1.5em;
+}
