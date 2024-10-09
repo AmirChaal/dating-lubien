@@ -14,7 +14,9 @@
                      false
                   ]
                ],
-               "consequence": [[]]
+               "consequence": [
+                  []
+               ]
             },
             {
                "question": "XXXX_ALLER_HUB_OBSERVATOIRE",

@@ -1,6 +1,4 @@
 <script lang="ts">
-import osuStory from './assets/json/osu.json'
-import histoire from './assets/json/histoire.json'
 import { Condition, Consequence, Option, Step, Story } from './types/Step';
 import { getStepById } from './functions/getStepById'
 import Button from 'primevue/button'
@@ -67,10 +65,12 @@ export default {
       getAllStoryVariables() {
          const allSteps = this.story.chapitres
          const allOptions = allSteps?.map((step: Step) => step.options).flat()
+         const allEffectiveOptions = allOptions.filter(opt => opt != null)
 
          const allUsedVariables = {} as Record<string, boolean>
-         allOptions.forEach(opt => {
+         allEffectiveOptions.forEach(opt => {
             ['consequence', 'condition'].forEach(key => {
+               if (!Object.hasOwn(opt, key)) return
                const exploitableArray = this.dumpEmptyArrays(opt[key])
                if (exploitableArray.length === 0) return
                exploitableArray.forEach((con: (Consequence | Condition)) => {

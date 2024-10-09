@@ -33,14 +33,14 @@ export default {
       },
       unusedSteps(): Step[] {
          const allIds = this.story.chapitres.map((step: Step) => step.identifiant)
-         const allOptions = this.story.chapitres.flatMap((step: Step) => step.options.map(o => o.vers))
+         const allOptions = this.story.chapitres.flatMap((step: Step) => step.options?.map(o => o.vers))
          const unusedSteps = allIds.filter((id: string) => !allOptions.includes(id)).map(id => getStepById(id, this.story))
          const unusedStepsWithoutEntryStep = unusedSteps.filter((step: Step) => step.identifiant !== this.entryStepId)
          return unusedStepsWithoutEntryStep
       },
       falseBridges(): string[] {
          const allIds = this.story.chapitres.map((step: Step) => step.identifiant)
-         const allOptions = this.story.chapitres.flatMap((step: Step) => step.options.map(o => o.vers))
+         const allOptions = this.story.chapitres.flatMap((step: Step) => step.options?.map(o => o.vers))
          return allOptions.filter((id: string) => !allIds.includes(id))
       }
    },
